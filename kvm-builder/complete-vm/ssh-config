@@ -1,0 +1,33 @@
+Host ceph2
+   Hostname ceph2
+   User ansible
+Host ceph3
+   Hostname ceph3
+   User ansible
+Host ceph4
+   Hostname ceph4
+   User ansible
+Host ceph5
+   Hostname ceph5
+   User ansible
+Host ceph6
+   Hostname ceph6
+   User ansible
+Host ceph7
+   Hostname ceph7
+   User ansible
+Host ceph8
+   Hostname ceph8
+   User ansible
+Host ceph9
+   Hostname ceph9
+   User ansible
+Host ceph10
+   Hostname ceph10
+   User ansible
+Host ceph11
+   Hostname ceph11
+   User ansible
+Host ceph12
+   Hostname ceph12
+   User ansible

@@ -1,0 +1,33 @@
+<network connections='1'>
+  <name>cephlab</name>
+  <uuid>477b061b-e3cf-4d7e-935b-fd055402ee00</uuid>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='virbr1' stp='on' delay='0'/>
+  <mac address='52:54:00:ad:10:57'/>
+  <ip address='10.0.0.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.0.0.100' end='10.0.0.254'/>
+      <host mac='52:54:00:c2:ad:02' name='ceph02' ip='10.0.0.2'/>
+      <host mac='52:54:00:c2:ad:03' name='ceph03' ip='10.0.0.3'/>
+      <host mac='52:54:00:c2:ad:04' name='ceph04' ip='10.0.0.4'/>
+      <host mac='52:54:00:c2:ad:05' name='ceph05' ip='10.0.0.5'/>
+      <host mac='52:54:00:c2:ad:06' name='ceph06' ip='10.0.0.6'/>
+      <host mac='52:54:00:c2:ad:07' name='ceph07' ip='10.0.0.7'/>
+      <host mac='52:54:00:c2:ad:08' name='ceph08' ip='10.0.0.8'/>
+      <host mac='52:54:00:c2:ad:09' name='ceph09' ip='10.0.0.9'/>
+      <host mac='52:54:00:c2:ad:10' name='ceph10' ip='10.0.0.10'/>
+      <host mac='52:54:00:c2:ad:11' name='ceph11' ip='10.0.0.11'/>
+      <host mac='52:54:00:c2:ad:12' name='ceph12' ip='10.0.0.12'/>
+      <host mac='52:54:00:c2:ad:13' name='ceph13' ip='10.0.0.13'/>
+      <host mac='52:54:00:c2:ad:14' name='ceph14' ip='10.0.0.14'/>
+      <host mac='52:54:00:c2:ad:15' name='ceph15' ip='10.0.0.15'/>
+      <host mac='52:54:00:c2:ad:16' name='ceph16' ip='10.0.0.16'/>
+      <host mac='52:54:00:c2:ad:17' name='ceph17' ip='10.0.0.17'/>
+    </dhcp>
+  </ip>
+</network>
+

@@ -1,0 +1,3 @@
+osd_scenario: collocated
+devices:
+  - /dev/vdb
