@@ -6,3 +6,4 @@ ceph_repository: rhcs
 ceph_rhcs_version: 3
 monitor_interface: eth0
 public_network: 10.0.0.0/24
+ntp_service_enabled: true
