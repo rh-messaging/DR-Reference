@@ -5,7 +5,7 @@
 cd disks
 
 zeroos="00"
-for i in {3..12}
+for i in {3..13}
 do
 	zeronr=${zeroos:${#i}:${#zeroos}}${i}
 	echo $zeronr

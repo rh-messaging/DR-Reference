@@ -63,8 +63,9 @@ ceph07
 ceph08
 ceph09
 ceph10
+ceph11
 
 
 [clients]
-ceph11
 ceph12
+ceph13

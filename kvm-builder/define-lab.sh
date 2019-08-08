@@ -5,7 +5,7 @@
 cd disks
 
 zeroos="00"
-for i in {2..12}
+for i in {2..13}
 do
 	zeronr=${zeroos:${#i}:${#zeroos}}${i}
 	echo $zeronr
@@ -13,7 +13,7 @@ do
 	sudo virsh define ceph${zeronr}.xml
 done
 
-for i in {6..10}
+for i in {6..11}
 do
 	zeronr=${zeroos:${#i}:${#zeroos}}${i}
 	echo attaching OSD disk on ceph${zeronr}
