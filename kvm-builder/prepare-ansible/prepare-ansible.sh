@@ -29,6 +29,7 @@ ssh -o "StrictHostKeyChecking no" ansible@ceph09 'echo ok'
 ssh -o "StrictHostKeyChecking no" ansible@ceph10 'echo ok'
 ssh -o "StrictHostKeyChecking no" ansible@ceph11 'echo ok'
 ssh -o "StrictHostKeyChecking no" ansible@ceph12 'echo ok'
+ssh -o "StrictHostKeyChecking no" ansible@ceph13 'echo ok'
 
 
 
