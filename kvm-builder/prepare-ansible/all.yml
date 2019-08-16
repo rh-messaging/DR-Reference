@@ -7,6 +7,9 @@ ceph_rhcs_version: 3
 monitor_interface: eth0
 public_network: 10.0.0.0/24
 ntp_service_enabled: true
+ceph_conf_overrides:
+  msdd:
+     mds_session_autoclose: 60000
 cephfs: cephfs # name of the ceph filesystem
 cephfs_data_pool:
   name: "{{ cephfs_data if cephfs_data is defined else 'cephfs_data' }}"
