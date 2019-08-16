@@ -1,6 +1,6 @@
 # Create CRUSH bucket for each datacenter
-ceph osd crush add-bucket dc1 datacenter
-ceph osd crush add-bucket dc2 datacenter
+ceph osd crush add-bucket dc1 datacenter root=default
+ceph osd crush add-bucket dc2 datacenter root=default
 
 ceph osd crush move ceph06 datacenter=dc1
 ceph osd crush move ceph07 datacenter=dc1
