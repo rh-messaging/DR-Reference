@@ -8,7 +8,7 @@ monitor_interface: eth0
 public_network: 10.0.0.0/24
 ntp_service_enabled: true
 ceph_conf_overrides:
-  msdd:
+  mdss:
      mds_session_autoclose: 60000
 cephfs: cephfs # name of the ceph filesystem
 cephfs_data_pool:
