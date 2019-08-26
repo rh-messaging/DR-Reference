@@ -28,3 +28,9 @@ ceph osd pool set cephfs_metadata pgp_num 128
 
 ceph osd pool set cephfs_data pg_num 128
 ceph osd pool set cephfs_data pgp_num 128
+
+ceph osd pool set cephfs_data min_size 1
+ceph osd pool set cephfs_metadata min_size 1
+
+ceph osd pool set cephfs_data size 2
+ceph osd pool set cephfs_metadata size 2
