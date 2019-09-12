@@ -43,29 +43,30 @@
 ## db-[99:101]-node.example.com
 
 [mons]
-ceph03
-ceph04
-ceph05
+DC1
+DC2
+DC3
 
 [mdss]
-ceph03
-ceph04
-ceph05
+DC1
+DC2
+DC3
 
 [mgrs]
-ceph03
-ceph04
-ceph05
+DC1
+DC2
+DC3
 
 [osds]
-ceph06
-ceph07
-ceph08
-ceph09
-ceph10
-ceph11
+DC1_OSD1
+DC1_OSD2
+DC1_OSD3
+DC2_OSD1
+DC2_OSD2
+DC2_OSD3
 
 
 [clients]
-ceph12
-ceph13
+client1
+client2
+client3

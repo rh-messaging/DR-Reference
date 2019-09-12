@@ -1,14 +1,23 @@
+#!/usr/bin/env bash
+ceph mds set allow_new_snaps true --yes-i-really-mean-it
+
+# This will extract the secret file we will need to map ceph-fs
+ceph auth get-key client.admin > ~/secret
+
+
+# This will create the datacenters buckets that we need to make sure the replication works fine
+
 # Create CRUSH bucket for each datacenter
 ceph osd crush add-bucket dc1 datacenter
 ceph osd crush add-bucket dc2 datacenter
 
-ceph osd crush move ceph06 datacenter=dc1
-ceph osd crush move ceph07 datacenter=dc1
-ceph osd crush move ceph08 datacenter=dc1
+ceph osd crush move DC1_OSD1 datacenter=dc1
+ceph osd crush move DC1_OSD2 datacenter=dc1
+ceph osd crush move DC1_OSD3 datacenter=dc1
 
-ceph osd crush move ceph09 datacenter=dc2
-ceph osd crush move ceph10 datacenter=dc2
-ceph osd crush move ceph11 datacenter=dc2
+ceph osd crush move DC2_OSD1 datacenter=dc2
+ceph osd crush move DC2_OSD2 datacenter=dc2
+ceph osd crush move DC2_OSD3 datacenter=dc2
 
 ceph osd crush move dc1 root=default
 ceph osd crush move dc2 root=default

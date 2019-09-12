@@ -2,3 +2,5 @@ target
 disks
 backup-disks
 *qcow2
+kvm-builder/init-scripts/subscribe.profile
+variables.profile

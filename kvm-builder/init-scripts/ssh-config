@@ -1,0 +1,39 @@
+Host DC1
+   Hostname DC1
+   User ansible
+Host DC2
+   Hostname DC2
+   User ansible
+Host DC3
+   Hostname DC3
+   User ansible
+Host DC1_OSD1
+   Hostname DC1_OSD1
+   User ansible
+Host DC1_OSD1
+   Hostname DC1_OSD2
+   User ansible
+Host DC1_OSD1
+   Hostname DC1_OSD3
+   User ansible
+Host DC2_OSD1
+   Hostname DC2_OSD1
+   User ansible
+Host DC2_OSD1
+   Hostname DC2_OSD2
+   User ansible
+Host DC2_OSD1
+   Hostname DC2_OSD3
+   User ansible
+Host DC2_OSD1
+   Hostname DC2_OSD3
+   User ansible
+Host client1
+   Hostname client1
+   User ansible
+Host client2
+   Hostname client2
+   User ansible
+Host client3
+   Hostname client3
+   User ansible
