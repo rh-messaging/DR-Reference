@@ -49,6 +49,7 @@ the following diagram gives you an idea on how these instances are used:
 
 - sshpass installed on your host
 - virsh and KVM installed on your host
+- a User register within access.redhat.com with a valid subscription for Red Hat Storage.
 
 If you don't plan to use KVM, please just provide the boxes defined on the previous section and skip this section.
 
