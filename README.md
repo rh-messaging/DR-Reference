@@ -57,7 +57,7 @@ Steps:
 
 1. Download a RHEL 7 KVM Guest Image from [access.redhat.com](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.7/x86_64/product-software)
 
-2. On a script shell, go to ./kvm-builder and execute create-ansible.sh
+2. On a script shell, go to ./kvm-builder and run create-ansible.sh
 
 There are a few options that are stored into variables.profile, these options will be asked the first time you run the script:
 
@@ -77,7 +77,7 @@ redhat
 
 You will need to provide inputs during the exeuction of the script. Example: the root password that you have assigned.
 
-If you executed this step successful the script will have created a first image for you named ceph_ansible, with root and password as you defined on ./init-scripts/variables.profile.
+If you run this step successful the script will have created a first image for you named ceph_ansible, with root and password as you defined on ./init-scripts/variables.profile.
 
 It will also update and install all the packages you need to the image.
 
@@ -156,7 +156,7 @@ Perform these following steps:
 
 - Copy ceph-ansible folder to the your ansible controller. On this case the instance we defiend as ceph-ansible.
 
-- After you copied, executed ./prepare-ansible.sh on that folder
+- After you copied, run ./prepare-ansible.sh on that folder
 
 ```bash
 ./prepare=ansible
