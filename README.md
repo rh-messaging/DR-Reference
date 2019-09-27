@@ -201,19 +201,19 @@ client 3 will be a master, however it will not be started until there was a fail
 - on client1, you can create a master broker with a static cluster using the CLI:
 
 ```bash
-./artemis create --host client1 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client2:61616,tcp://client3:61616 --shared-store --queues exampleQueue /root/artemis-instance
+./artemis create --host client1 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client2:61616,tcp://client3:61616 --shared-store --failover-on-shutdown  --queues exampleQueue /root/artemis-instance 
 ```
 
 - on client2, you can create a slave broker similar to client1, with a few tweaks:
 
 ```bash
-./artemis create --host client2 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client1:61616,tcp://client3:61616 --slave --shared-store --queues exampleQueue /root/artemis-instance
+./artemis create --host client2 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client1:61616,tcp://client3:61616 --slave --shared-store --failover-on-shutdown --queues exampleQueue /root/artemis-instance
 ```
 
 - on client 3, you can create a master broker as well
 
 ```bash
-./artemis create --host client3 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client1:61616,tcp://client2:61616 --shared-store --queues exampleQueue /root/artemis-instance
+./artemis create --host client3 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client1:61616,tcp://client2:61616 --failover-on-shutdown --shared-store --queues exampleQueue /root/artemis-instance
 ```
 
 Notice: You may chose to use a slave broker on client3, however you would have no control which would be your current next backpu.
