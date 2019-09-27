@@ -167,7 +167,7 @@ Perform these following steps:
 
 # Mapping a device
 
-- On a OSD instance, run the following command:
+- On a Mon instance (DC1, DC2 or DC3), run the following command:
 
 ````bash
 ceph auth get-key client.admin > ~/secret
