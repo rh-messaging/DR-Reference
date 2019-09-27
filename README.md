@@ -158,9 +158,17 @@ Perform these following steps:
 
 - After you copied, executed ./prepare-ansible.sh on that folder
 
-- go to /usr/share/ceph-ansible
+```bash
+./prepare=ansible
+```
 
-- execute ./ansible-playbook site.yml
+- go to /usr/share/ceph-ansible and run ansible-playbook
+```bash
+cd /usr/share/ceph-ansible
+ansible-playbook site.yml
+```
+
+This may take 1 or 2 hours to finish.
 
 (For more information, refer to the ceph installation manual, this is a tool to make the installation easier but you still need to understand the process to eventually fix eventual problems.)
 
