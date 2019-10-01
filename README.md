@@ -152,6 +152,19 @@ This script will:
 
 You don't need to follow the previous steps on KVM to use CephAnsible, but as we described earlier you will need the following hosts defined here.
 
+## Useful scripts:
+There are two scripts from the previous section that may be useful even if you are not creating kvm instances provided:
+
+- ./subscribe-all.sh
+  *  This will subscribe all your instances to an account provided, and install the proper repositories needed to yum install ceph-ansible
+
+- ./update-all.sh
+  * This script will update (yum update) all  your instances
+  
+You will need to update your /etc/hosts accordingly to the names listed on the beginning of this README.
+
+## Using Ceph ansible
+
 Perform these following steps:
 
 - Copy ceph-ansible folder to the your ansible controller. On this case the instance we defiend as ceph-ansible.
