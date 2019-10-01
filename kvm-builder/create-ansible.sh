@@ -35,6 +35,7 @@ sudo virsh define $DISK_LOCATION/ceph_ansible.xml
 if [ $CREATE = "Y" ]; then
     sudo virsh start ceph_ansible
     sleep 10
+    ./update-ansible.sh
     sshpass -p $ROOT_PASSWORD scp  -o "StrictHostKeyChecking no" -r init-scripts root@$BASE_IP:~/
     sshpass -p $ROOT_PASSWORD ssh  -o "StrictHostKeyChecking no" root@$BASE_IP init-scripts/subscribe.sh
     sshpass -p $ROOT_PASSWORD ssh  -o "StrictHostKeyChecking no" root@$BASE_IP init-scripts/update.sh
