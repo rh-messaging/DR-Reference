@@ -3,11 +3,13 @@
 
 set -e
 
+UpdateInstances=("ceph_ansible" "DC1" "DC2" "DC3" "DC1_OSD1" "DC1_OSD2" "DC1_OSD3" "DC2_OSD1" "DC2_OSD2" "DC2_OSD3")
+
 # this script will run subscriptions on all your virtual boxes
-for ip in {100..112}
+for ip in ${UpdateInstances[*]}
 do
-	echo 10.0.0.$ip
-	sshpass -p $ROOT_PASSWORD scp -o "StrictHostKeyChecking no" -r init-scripts root@10.0.0.$ip:~/
-	nohup sshpass -p $ROOT_PASSWORD ssh -o "StrictHostKeyChecking no" root@10.0.0.$ip ./init-scripts/subscribe.sh 1>subscribe.$ip.log 2>subscribe.$ip.erlog &
+	echo $ip
+	sshpass -p $ROOT_PASSWORD scp -o "StrictHostKeyChecking no" -r init-scripts root@$ip:~/
+	nohup sshpass -p $ROOT_PASSWORD ssh -o "StrictHostKeyChecking no" root@$ip ./init-scripts/subscribe.sh 1>subscribe.$ip.log 2>subscribe.$ip.erlog &
 done
 exit
