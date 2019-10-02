@@ -1,6 +1,6 @@
 # Multi Site Ceph and Red Hat AMQ Broker
 
-This contains a set of examples on how you can configure ceph-fs as a multi-site provider for ActiveMQ Artemis.
+This contains a set of files explaining on how you can configure ceph-fs as a multi-site provider for ActiveMQ Artemis.
 
 You will need a valid Red Hat subscription for Red Hat Ceph Storage to use these examples.
 
