@@ -229,7 +229,7 @@ client 3 will be a master, however it will not be started until there was a fail
 ./artemis create --host client3 --cluster-user cluster-user --cluster-password cluster-password --allow-anonymous --user guest --password guest --role guest --data /mnt/cephfs/broker1 --staticCluster tcp://client1:61616,tcp://client2:61616 --failover-on-shutdown --shared-store --queues exampleQueue /root/artemis-instance
 ```
 
-Notice: You may chose to use a slave broker on client3, however you would have no control which would be your current next backpu.
+Notice: You may chose to use a slave broker on client3, however you would have no control which would be your current next backup.
 
 
 At this point you may start your brokers.
