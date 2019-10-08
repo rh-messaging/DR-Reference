@@ -183,12 +183,12 @@ ansible-playbook site.yml
 
 This may take 1 or 2 hours to finish.
 
-(For more information, refer to the ceph installation manual, this is a tool to make the installation easier but you still need to understand the process to eventually fix eventual problems.)
+(For more information, refer to the ceph installation manual, this is a tool to make the installation easier but you still need to understand the process to successfully troubleshoot.)
 
 
 # Mapping a device
 
-- On a Mon instance (DC1, DC2 or DC3), run the following command:
+- On a MONS instance (DC1, DC2 or DC3), run the following command:
 
 ````bash
 ceph auth get-key client.admin > ~/secret
