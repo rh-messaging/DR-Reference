@@ -172,7 +172,7 @@ Perform these following steps:
 - After you copied, run ./prepare-ansible.sh on that folder
 
 ```bash
-./prepare=ansible
+./prepare-ansible
 ```
 
 - go to /usr/share/ceph-ansible and run ansible-playbook
